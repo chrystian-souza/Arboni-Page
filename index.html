@@ -4,55 +4,108 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arbonimen</title>
+
 <style>
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
 }
-.container {
-  background: #9a773e;
-  padding: 40px;
-  border-radius: 12px;
+
+header {
+  background: #000;
+  color: white;
+  padding: 20px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  max-width: 500px;
 }
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
 h1 {
-  margin-bottom: 10px;
+  margin: 0;
 }
-p {
-  color: #fefefe;
+
+h2 {
+  margin-top: 0;
 }
-a {
+
+.btn {
   display: inline-block;
   margin-top: 15px;
   padding: 12px 20px;
   background: #000;
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: none;
   border-radius: 8px;
+  font-weight: bold;
 }
-a:hover {
+
+.btn:hover {
   background: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-size: 14px;
 }
 </style>
 </head>
+
 <body>
 
-<div class="container">
+<header>
   <h1>Arbonimen</h1>
-  <p>Loja online de moda masculina.</p>
-  <p>Contato: contato@arbonimen.com.br</p>
+  <p>Loja online de roupas masculinas</p>
+</header>
 
-  <a href="https://arboni.lojavirtualnuvem.com.br/" target="_blank">
-    Visitar nossa loja
-  </a>
+<div class="container">
+
+  <div class="card">
+    <h2>Sobre a Arbonimen</h2>
+    <p>
+      Arbonimen | Roupas para o seu dia a dia.
+      A Arbonimen nasceu para facilitar a vida do homem moderno. Escolhemos peças que unem o estilo que você gosta com o conforto que você precisa. 
+      Roupas de qualidade, selecionadas a dedo para garantir durabilidade e um ótimo caimento em qualquer ocasião 🛡️.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Nossa Loja</h2>
+    <p>
+      Você pode conhecer todos os nossos produtos acessando nossa loja oficial:
+    </p>
+
+    <a class="btn" href="https://arboni.lojavirtualnuvem.com.br/" target="_blank">
+      Visitar Loja
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>Contato</h2>
+    <p>Email: <strong>contato@arbonimen.com.br</strong></p>
+    <p>Respondemos o mais rápido possível.</p>
+  </div>
+
 </div>
+
+<footer>
+© 2026 Arbonimen — Todos os direitos reservados
+</footer>
 
 </body>
 </html>
