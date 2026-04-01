@@ -85,9 +85,10 @@ footer {
   font-size: 14px;
 }
 
+
 .modelo {
   position: absolute;
-  left: 0;
+  left: 0px;
   /* fica encostado no card */
   top: 200px;
   height: 700px;
@@ -98,22 +99,33 @@ footer {
 }
 
 
-@media (min-width: 344px) and (max-width: 1024px) {
+@media (min-width: 1800px) {
+  .modelo {
+    transform: translate(-30px, 0);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .modelo {
+    transform: translate(-225px, 0);
+  }
+}
+
+@media (max-width: 1199px) {
+  .modelo {
+    transform: translate(-270px, 0);
+  }
+}
+
+@media (max-width: 1024px) {
   .modelo {
     display: none;
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width: 1024px) {
   .modelo {
-    position: absolute;
-    left: 0;
-    /* fica encostado no card */
-    top: 200px;
-    height: 600px;
-    z-index: 10;
-    transform: translate(-270px, 0);
-
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
+    display: none;
   }
 }
+
