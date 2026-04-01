@@ -4,104 +4,173 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arbonimen</title>
-<link rel="icon" type="image/jpeg" href="logo.jpeg">
+
+
 <style>
 body {
+  
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #cecece;
-  color: #333;
-}
-
-header {
-  background: #000;
   color: white;
-  padding: 20px;
   text-align: center;
+
+  background:
+    radial-gradient(1200px 600px at 50% 20%, rgba(255,255,255,0.12), transparent 60%),
+    radial-gradient(900px 500px at 50% 100%, rgba(255,255,255,0.05), transparent 70%),
+    linear-gradient(180deg, #050505, #0a0a0a 40%, #030303);
+
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
+
+.modelo {
+  position: absolute;
+  left: 200;   /* fica encostado no card */
+  top: 200px;
+  height: 600px;
+  z-index: 10;
+  transform: translate(-1000px, 0);
+
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));
 }
 
-.card {
-  background: #9a773e;
-  padding: 30px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+@media (max-width: 1024px) {
+  .modelo {
+    left: -120px;
+    height: 500px;
+  }
 }
 
-h1 {
-  margin: 0;
+@media (max-width: 768px) {
+  .modelo {
+    display: none;
+  }
 }
 
-h2 {
-  margin-top: 0;
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px;
 }
 
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+
+
+/* BOTÃO PRINCIPAL */
 .btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 12px 20px;
-  background: #000;
-  color: white;
+  padding: 14px 26px;
+  background: #e6d3a3;
+  color: #000;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #0cd31c;
+  background: #fff;
 }
 
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  position: relative; /* IMPORTANTE */
+}
+
+/* CARDS */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+/* LISTA */
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
   color: #777;
   font-size: 14px;
 }
+
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Arbonimen</h1>
-  <p>Loja online de roupas masculinas</p>
-</header>
+<!-- HERO -->
+<section class="hero">
+  <h1>Estilo que fala por você</h1>
+  <p>Roupas masculinas para homens modernos</p>
+
+  <a class="btn" href="https://arboni.lojavirtualnuvem.com.br/" target="_blank">
+    Explorar Coleção
+  </a>
+<img src="modelo.png" class="modelo">
+</section>
 
 <div class="container">
 
+  <!-- SOBRE -->
   <div class="card">
     <h2>Sobre a Arbonimen</h2>
-    <p>
-      A Arboni nasceu com um propósito claro: ajudar homens a se vestirem bem, com elegância,
-      conforto e personalidade no dia a dia. Somos uma loja masculina pensada para homens que valorizam um estilo mais maduro e casual. 
-      Selecionamos cuidadosamente cada peça para oferecer bom caimento, estilo atemporal e qualidade, pensando em quem gosta de se vestir bem em diferentes momentos da rotina.
-      Aqui você encontrará roupas ideais para compor looks elegantes e confortáveis, seja para o trabalho, momentos de lazer ou compromissos do dia a dia. 
-      Fique à vontade para explorar nossa coleção e descobrir peças que valorizam seu estilo. 
-      Arboni – Elegância e estilo para o homem moderno. 👔
+
+    <ul class="features">
+      <li>✔ Estilo moderno e atemporal</li>
+      <li>✔ Conforto para o dia a dia</li>
+      <li>✔ Qualidade em cada detalhe</li>
+    </ul>
+
+    <p style="color:#aaa;">
+      Peças selecionadas para homens que valorizam elegância sem esforço,
+      seja no trabalho, lazer ou rotina.
     </p>
   </div>
 
-  <div class="card">
-    <h2>Nossa Loja</h2>
-    <p>
-      Você pode conhecer todos os nossos produtos acessando nossa loja oficial:
-    </p>
+  <!-- CTA -->
+  <div class="card" style="text-align:center;">
+    <h2>Conheça a coleção</h2>
+    <p style="color:#ccc;">Descubra peças que elevam seu estilo</p>
 
     <a class="btn" href="https://arboni.lojavirtualnuvem.com.br/" target="_blank">
-      Visitar Loja
+      Comprar Agora
     </a>
   </div>
 
+  <!-- CONFIANÇA -->
   <div class="card">
-    <h2>Contato</h2>
-    <p>Email: <strong>contato@arbonimen.com.br</strong></p>
-    <p>Respondemos o mais rápido possível.</p>
+    <h2>Por que escolher a Arbonimen?</h2>
+
+    <ul class="features">
+      <li>🚚 Entrega para todo Brasil</li>
+      <li>🔄 Troca fácil</li>
+      <li>🔒 Compra segura</li>
+    </ul>
   </div>
 
 </div>
