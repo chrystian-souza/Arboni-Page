@@ -99,6 +99,28 @@ footer {
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
 }
 
+.cupom {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 14px 22px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+
+  backdrop-filter: blur(10px);
+
+  font-size: 14px;
+  color: #ddd;
+}
+
+.cupom strong {
+  background: rgba(230, 211, 163, 0.15);
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: #e6d3a3;
+}
+
 
 @media (min-width: 1800px) {
   .modelo {
