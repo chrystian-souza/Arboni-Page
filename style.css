@@ -216,5 +216,40 @@ footer {
   }
 }
 
+.social {
+  margin-top: 15px;
+}
 
+.social a {
+  color: #aaa;
+  margin: 0 10px;
+  font-size: 22px;
+  transition: 0.3s;
+  display: inline-block;
+}
 
+/* efeito hover */
+.social a:hover {
+  transform: translateY(-5px) scale(1.2);
+}
+
+/* cores específicas */
+.social a:hover .fa-instagram {
+  color: #e1306c;
+}
+
+.social a:hover .fa-whatsapp {
+  color: #25d366;
+}
+
+.social a:hover .fa-facebook {
+  color: #1877f2;
+}
+
+.social a:hover .fa-tiktok {
+  color: #fff;
+}
+
+.social a:hover .fa-users {
+  color: #e6d3a3;
+}
