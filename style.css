@@ -104,13 +104,10 @@ footer {
   margin-top: 20px;
   display: inline-block;
   padding: 14px 22px;
-
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 10px;
-
   backdrop-filter: blur(10px);
-
   font-size: 14px;
   color: #ddd;
 }
@@ -140,17 +137,38 @@ footer {
   .modelo {
     transform: translate(-270px, 0);
   }
+  .cupom span {
+  display: block;
+}
+
+.cupom strong {
+  display: block;
+}
 }
 
 @media (max-width: 1024px) {
   .modelo {
     display: none;
   }
+
 }
 
-@media (max-width: 1024px) {
-  .modelo {
-    display: none;
+@media (max-width: 820px) {
+  .cupom {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    
+  }
+    .cupom span,
+  .cupom strong {
+    display: block;
+    width: 100%;
   }
 }
+
+
+
+
+
 
