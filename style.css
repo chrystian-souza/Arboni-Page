@@ -93,6 +93,7 @@ footer {
   top: 200px;
   height: 700px;
   z-index: 10;
+  pointer-events: none;
   transform: translate(-120px, 0);
 
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
